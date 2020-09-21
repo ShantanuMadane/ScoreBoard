@@ -1,0 +1,47 @@
+{
+    "apps": [
+      {
+        "name": "SERVER_1",
+        "script": "app.js",
+        "watch": true,
+        "ignore_watch": ["*.log", ".git", "*.csv", "*.json", "LOG"],
+        "env": {
+          "ENVIRONMENT": "local",
+          "PORT_NUMBER": 3000,
+          "SERVER_NAME": "APP1",
+          "SERVER_URL": "http://localhost:3000",
+          "DATABASE_URL": "mongodb+srv://shantanuSimpleGame:shantanu237@cluster0.yk1vf.mongodb.net/test"
+        },
+        "cwd": "../../"
+      },
+      {
+        "name": "SERVER_2",
+        "script": "app.js",
+        "watch": true,
+        "ignore_watch": ["*.log", ".git", "*.csv", "*.json", "LOG"],
+        "env": {
+          "ENVIRONMENT": "local",
+          "PORT_NUMBER": 3001,
+          "SERVER_NAME": "APP2",
+          "SERVER_URL": "http://localhost:3001",
+          "DATABASE_URL": "mongodb+srv://shantanuSimpleGame:shantanu237@cluster0.yk1vf.mongodb.net/test"
+        },
+        "cwd": "../../"
+      },
+      {
+        "name": "SERVER_3",
+        "script": "app.js",
+        "watch": true,
+        "ignore_watch": ["*.log", ".git", "*.csv", "*.json", "LOG"],
+        "env": {
+          "ENVIRONMENT": "local",
+          "PORT_NUMBER": 3002,
+          "SERVER_NAME": "APP3",
+          "DATABASE_URL": "mongodb+srv://shantanuSimpleGame:shantanu237@cluster0.yk1vf.mongodb.net/test",
+          "SERVER_URL": "http://localhost:3002"
+        },
+        "cwd": "../../"
+      }
+    ]
+  }
+  
