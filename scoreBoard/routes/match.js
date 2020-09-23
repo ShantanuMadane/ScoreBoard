@@ -110,13 +110,13 @@ router.get("/player_stats", (req, res) => {
       return res.send({ status: 400, message: "paramter playerId missing" });
     } else {
       //check if player id exits
-
+     // throw "my err"
       mongoClient.connect(db => {
         db.collection("playerData").findOne({ playerId }, (err, data) => {
           if (data) {
             db.collection("match_data").find({ playerId },{projection:{ "_id" : 0, "updatedAt" : 0}}).toArray( (err, data) => { 
               console.log(data);
-              db.close();
+             // db.close();
               return res.send({status:200,playerStats:data});
             });
           } else {
@@ -130,6 +130,7 @@ router.get("/player_stats", (req, res) => {
       });
     }
   } catch (err) {
+    console.log(err);
     return res.send({ status: 400, message: " query failed" });
   }
 });
