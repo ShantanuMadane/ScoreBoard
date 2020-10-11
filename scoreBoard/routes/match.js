@@ -346,8 +346,8 @@ router.post("/player_login", (req, res) => {
             bcrypt.compare(pass, data.password, (err, result) => {
               // result == true
               if (result == true) {
-                console.log("PRIVATE KEY", process.env.JWT_KEY);
-                console.log(process.cwd())
+               // console.log("PRIVATE KEY", process.env.JWT_KEY);
+               // console.log(process.cwd())
                 const privateKey = fs.readFileSync("./deploy/local/private.pem");
                 //  var token = jwt.sign({email },privateKey, { algorithm: 'RS256'});
                 // console.log("TOKEN",token)
