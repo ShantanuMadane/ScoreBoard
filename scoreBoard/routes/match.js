@@ -289,9 +289,9 @@ router.post("/player_register", (req, res) => {
         message: "parameter email, password or userName  missing"
       });
     }
-    // if (!validator.validateEmail(email)) {
-    //   return res.send({ status: 400, message: "invalid email id" });
-    // }
+    if (!validator.validateEmail(email)) {
+      return res.send({ status: 400, message: "invalid email id" });
+    }
 
     console.log("AVSBASVABSC")
     bcrypt.hash(pass, saltRounds, (err, hash) => {

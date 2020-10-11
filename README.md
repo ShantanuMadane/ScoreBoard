@@ -6,6 +6,20 @@
 
 
 
+# STEPS TO REGISTER
+
+POST CALL
+Call http://52.66.6.0:3000/match/player_register  API which takes email,password and userName as parameters.
+
+
+# STEPS TO LOGIN
+POST CALL
+Call http://52.66.6.0:3000/match/player_login API to login 
+
+Login API will provide you token for using other API's
+
+Use the token received from the login API to call player_score,player_stats,match_leaderboard, and player_stats_match API as bearer token for Authorization
+
 # ScoreBoard
 LeaderBoard
 
@@ -13,8 +27,8 @@ github Link - https://github.com/ShantanuMadane/ScoreBoard
 
 POSTMAN LINK - https://www.getpostman.com/collections/12494b2c4dcfebf3d5ba
 
-MATCH_NAME -  CSGO_MATCH_1,CSGO_MATCH_2
-PLAYERID - TTT,SSS,UUU,VVV
+MATCH_NAME -  CSGO_MATCH_1,CSGO_MATCH_2,CSGO_MATCH_3
+PLAYERID - UUzBW5Gtp,WmJuBnhaL,ULN2-X2Xh,h4yAAAvDQ,GbQudu_2u,bS0GjbDJf
 #PlayerData
 [
     {
@@ -125,7 +139,27 @@ PLAYERID - TTT,SSS,UUU,VVV
         "playerId" : "UUzBW5Gtp",
         "kills" : 1,
         "score" : 10,
-        "updatedAt" : 1600721189675.0,
+        "updatedAt" : 1601444202390.0,
         "userName" : "TTT"
+    },
+    {
+        "_id" : ObjectId("5f82d7c8f57a7337622b5700"),
+        "matchName" : "CSGO_MATCH_3",
+        "playerId" : "bS0GjbDJf",
+        "kills" : 3,
+        "score" : 10,
+        "updatedAt" : 1602410923088.0,
+        "userName" : "Shanu"
+    },
+    {
+        "_id" : ObjectId("5f831fa5f57a733762385f56"),
+        "matchName" : "CSGO_MATCH_3",
+        "playerId" : "GbQudu_2u",
+        "kills" : 5,
+        "score" : 40,
+        "updatedAt" : 1602428837093.0,
+        "userName" : "Shanu"
     }
 ]
+
+
