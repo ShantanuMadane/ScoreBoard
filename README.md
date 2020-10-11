@@ -25,7 +25,7 @@ LeaderBoard
 
 github Link - https://github.com/ShantanuMadane/ScoreBoard
 
-POSTMAN LINK - https://www.getpostman.com/collections/12494b2c4dcfebf3d5ba
+POSTMAN LINK - https://www.getpostman.com/collections/b5da7d110c40fef00b05
 
 MATCH_NAME -  CSGO_MATCH_1,CSGO_MATCH_2,CSGO_MATCH_3
 PLAYERID - UUzBW5Gtp,WmJuBnhaL,ULN2-X2Xh,h4yAAAvDQ,GbQudu_2u,bS0GjbDJf
